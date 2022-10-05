@@ -1,0 +1,127 @@
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"> 
+        <title>Juego del ahorcado Alura</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.go
+ogleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+    
+   
+<div class="ahorcado-4-desktop screen">
+     
+  <img class="group-3" src="Top.svg" />
+    
+    <section id='startscreen' class='initscreen '>
+    <div id = 'btnstart' onclick="startGame()" class="button"> Iniciar juego</div>
+    <div class="actions"></div>
+    <div id= 'btnaddword' onclick="addword()" class="button-2 "> Agregar palabra</div>
+     </section>
+    
+     <section id='addwordscreen'>
+        <div class="flex-col">
+     <textarea name="textadd" id="textaddword" rows="10" cols="50" class="mytextbox">Ingrese una palabra</textarea>
+      
+    <div class="frame-1">
+     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle-fill" viewBox="0 0 16 16">
+  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+</svg>
+      <p class="solo-letras-minsculas-y-sin-acentos">Máx. de 8 letras</p>
+    </div>
+    <div class="frame-3">
+     
+        <div class="button" onclick="guardar()">Guardar y empezar</div>
+     
+     
+        <div class="button-2" onclick="initscreen()">Cancelar</div>
+     </div>   
+     </section>
+     
+  
+     <div class="group-5" ></div>
+     <div id='p3' class="image1 "></div>
+     <div id='p1' class="image2" ></div>
+     <div id='p2' class="image3" ></div>
+     <div id='pbase' class="image4" ></div>
+     <div id='p4' class="head "> </div>
+     <div id='p5' class="head2"> </div>
+     <div id='p6' class="body"></div>
+     <div id='p7' class="leftarm"></div>
+     <div id='p8' class="rightarm"></div>
+     <div id='p9' class="leftleg"></div>
+    <div id='p10' class="rightleg"></div>
+   
+    <input type="textarea" name="text10" id="text10"  rows ="5" class="mytextbox score" value="Play" readonly> 
+    
+    
+  <div class="keyboard">
+    <div class="word">
+      <div class="letter-container">
+        <div class="letter-1">
+          
+            <input type="text" name="text1" id="text1"  class="mytextbox letter"readonly> 
+          <div id="pl1"  class="rectangle-6"></div>
+        </div>
+        <div class="letter-1">
+         <input type="text" name="text2" id="text2"  class="mytextbox letter" readonly> 
+          <div id="pl2" class="rectangle-6"></div>
+        </div>
+        <div class="letter-1">
+         <input type="text" name="text3" id="text3"  class="mytextbox letter" readonly> 
+          <div id="pl3" class="rectangle-6"></div>
+        </div>
+        <div class="letter-1">
+          <input type="text" name="text4" id="text4"  class="mytextbox letter" readonly> 
+          <div id="pl4" class="rectangle-6"></div>
+        </div>
+        <div class="letter-1">
+          <input type="text" name="text5" id="text5"  class="mytextbox letter" readonly> 
+          <div id="pl5" class="rectangle-6"></div>
+        </div>
+          <div class="letter-1">
+          <input type="text" name="text6" id="text6"  class="mytextbox letter" readonly> 
+          <div id="pl6" class="rectangle-6"></div>
+        </div>
+          <div class="letter-1">
+          <input type="text" name="text7" id="text7"  class="mytextbox letter" readonly> 
+          <div id="pl7" class="rectangle-6"></div>
+        </div>
+          <div class="letter-1">
+          <input type="text" name="text8" id="text8"  class="mytextbox letter" readonly> 
+          <div id="pl8" class="rectangle-6"></div>
+        </div>
+          
+      </div>    
+    </div>
+       
+    
+
+    <div class="other-letters">
+      <div class="other-letters-iteminter-normal-abbey-24px">
+        </div>
+       <input type="textarea" name="text9" id="text9"  rows ="5" class="mytextbox " value="" readonly> 
+       </div>
+      
+  </div>
+    
+  
+  <div class="actions">
+    <div id = 'btnplay' onclick = "startGame()" class="button">
+      <div  >Nuevo juego</div>
+    </div>
+    <div id='btnend' onclick= "initscreen()"  class="button-2">
+      <div  >Desistir</div>
+    </div>
+  </div>
+        
+</div>
+     
+
+     <footer class="footer">
+        <div class="alinear-centro"><p>Creado por Yazmin Villegas! &#10084; </p></div>
+         <div class="alinear-centro"><p>Email: yazminvillegas128@gmail.com </p></div>        
+         <div class="alinear-centro"><p> #challengeonecodificador3</p></div>
+    </footer>
+</html>
+
+<script src="play.js"></script>
